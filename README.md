@@ -105,3 +105,46 @@ Sab commands dekhne ke liye WhatsApp mein type karo:
 
 **JazakAllah Khair! 🤍**  
 *Made with ❤️ by Shobii*
+
+---
+
+## 🟣 HEROKU par Deploy karo
+
+### Step 1 — Heroku Account
+👉 https://heroku.com par free account banao
+
+### Step 2 — New App Banao
+1. Dashboard → **New** → **Create new app**
+2. App name: `shobii-bot-yourname` (unique hona chahiye)
+3. Region: **United States**
+4. **Create app** dabao
+
+### Step 3 — GitHub Connect karo
+1. **Deploy** tab → **GitHub** select karo
+2. Apni `shobii-bot` repo connect karo
+3. **Enable Automatic Deploys** ✅
+
+### Step 4 — Environment Variables
+**Settings** tab → **Config Vars** → **Reveal Config Vars**
+
+| KEY | VALUE |
+|---|---|
+| `SESSION_ID` | (pair code se mila session) |
+| `OWNER_NUMBER` | `923270321760` |
+| `BOT_NAME` | `SHOBII-BOT` |
+| `PREFIX` | `.` |
+| `MODE` | `public` |
+| `ANTI_LINK` | `true` |
+| `antidelete` | `all` |
+| `AutoReaction` | `true` |
+| `STATUSVIEW` | `true` |
+
+### Step 5 — Worker Dyno ON karo
+1. **Resources** tab
+2. `web` dyno → OFF karo ❌
+3. `worker` dyno → ON karo ✅
+
+### Step 6 — Deploy!
+**Deploy** tab → **Manual Deploy** → **Deploy Branch** dabao ✅
+
+---

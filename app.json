@@ -1,0 +1,111 @@
+{
+  "name": "SHOBII-BOT",
+  "description": "SHOBII BOT - Powerful WhatsApp Bot by Shobii 🤍",
+  "logo": "",
+  "keywords": ["whatsapp", "bot", "shobii"],
+  "repository": "",
+  "env": {
+    "SESSION_ID": {
+      "description": "Pair code se mila SESSION ID (Required!)",
+      "required": true,
+      "value": ""
+    },
+    "BOT_NAME": {
+      "description": "Bot ka naam",
+      "required": false,
+      "value": "SHOBII-BOT"
+    },
+    "OWNER_NUMBER": {
+      "description": "Tumhara WhatsApp number (country code ke saath, jaise 923270321760)",
+      "required": true,
+      "value": "923270321760"
+    },
+    "PREFIX": {
+      "description": "Bot command prefix",
+      "required": false,
+      "value": "."
+    },
+    "MODE": {
+      "description": "public ya private",
+      "required": false,
+      "value": "public"
+    },
+    "ANTI_LINK": {
+      "description": "Group mein links block karo (true/false)",
+      "required": false,
+      "value": "true"
+    },
+    "antidelete": {
+      "description": "Deleted messages (all/group/private/false)",
+      "required": false,
+      "value": "all"
+    },
+    "AutoReaction": {
+      "description": "Messages par auto reaction (true/false)",
+      "required": false,
+      "value": "true"
+    },
+    "STATUSVIEW": {
+      "description": "Status auto dekho (true/false)",
+      "required": false,
+      "value": "true"
+    },
+    "StatusLikes": {
+      "description": "Status par auto like (true/false)",
+      "required": false,
+      "value": "true"
+    },
+    "STATUS_MSG": {
+      "description": "Status dekhne ke baad message",
+      "required": false,
+      "value": "Assalamualaikum! Aapka status dekha ♥️"
+    },
+    "ANTISPAM": {
+      "description": "Spam protection (true/false)",
+      "required": false,
+      "value": "true"
+    },
+    "REJECTSCALLS": {
+      "description": "Calls reject karo (true/false)",
+      "required": false,
+      "value": "false"
+    },
+    "CALLMSG": {
+      "description": "Call reject hone par message",
+      "required": false,
+      "value": "Maafi chahta hun, abhi calls allow nahi hain"
+    },
+    "PACK_NAME": {
+      "description": "Sticker pack naam",
+      "required": false,
+      "value": "SHOBII♥️"
+    },
+    "AUTHOR_NAME": {
+      "description": "Sticker author naam",
+      "required": false,
+      "value": "Powered by SHOBII BOT"
+    },
+    "DAILY_HADEES": {
+      "description": "Daily hadees feature (true/false)",
+      "required": false,
+      "value": "true"
+    },
+    "DAILY_AYAH": {
+      "description": "Daily ayah feature (true/false)",
+      "required": false,
+      "value": "true"
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "stack": "heroku-22"
+}
